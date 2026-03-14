@@ -1,17 +1,21 @@
-name: Verify Agent
+name: sernat
 
 on:
   workflow_dispatch:
 
 jobs:
-  verify:
+  verify-agent:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Step 1
-        run: echo "Start verification"
+      - name: Checkout repository
+        uses: actions/checkout@v3
 
-      - name: Step 2
-        run: echo "Processing"
+      - name: Step 1 - Start verification
+        run: echo "Starting agent verification..."
 
-      - name: Step 3 - link human to agent
-        run: echo "https://agent.billions.network"
+      - name: Step 2 - Processing identity
+        run: echo "Processing..."
+
+      - name: Step 3 - Link human to agent
+        run: echo "https://agent.billions.network/link"
