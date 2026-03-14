@@ -1,1 +1,17 @@
+name: Verify Agent
 
+on:
+  workflow_dispatch:
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Step 1
+        run: echo "Start verification"
+
+      - name: Step 2
+        run: echo "Processing"
+
+      - name: Step 3 - link human to agent
+        run: echo "https://agent.billions.network"
